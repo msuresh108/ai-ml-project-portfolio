@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected data science, machine learning, and AI course projects.">
+  <title>Data Science &amp; AI Project Portfolio</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5f6b7c;
+      --navy: #183b56;
+      --blue: #1f6feb;
+      --pale: #f4f7fb;
+      --line: #dfe6ef;
+      --card: #ffffff;
+      --tag: #e9f2ff;
+      --paused: #7a4b00;
+      --paused-bg: #fff4d6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--pale);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: var(--blue); }
+
+    .hero {
+      color: white;
+      background: linear-gradient(135deg, #102a43, #1f5c8f 60%, #2b78b8);
+      padding: 72px 24px 64px;
+    }
+
+    .hero-inner,
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #b9dcff;
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(2.25rem, 6vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .hero p:last-child {
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: #e1edf7;
+      font-size: 1.1rem;
+    }
+
+    main { padding: 48px 0 64px; }
+
+    .intro {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    h2 { margin: 0; color: var(--navy); font-size: 1.7rem; }
+    .intro p { max-width: 620px; margin: 0; color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      min-height: 300px;
+      flex-direction: column;
+      padding: 26px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(28, 52, 78, 0.06);
+    }
+
+    .number {
+      color: #7c8998;
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .card h3 {
+      margin: 8px 0 10px;
+      color: var(--navy);
+      font-size: 1.35rem;
+      line-height: 1.25;
+    }
+
+    .card p { margin: 0 0 18px; color: var(--muted); }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 0 0 22px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tags li {
+      padding: 5px 9px;
+      color: #214b75;
+      background: var(--tag);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 650;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 9px 13px;
+      color: white;
+      background: var(--blue);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      color: var(--blue);
+      background: #edf5ff;
+      border: 1px solid #cfe4ff;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 4px 8px;
+      color: var(--paused);
+      background: var(--paused-bg);
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 760px) {
+      .hero { padding-top: 52px; }
+      .intro { display: block; }
+      .intro p { margin-top: 10px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">UT Austin Professional Learning</p>
+      <h1>Data Science &amp; AI Project Portfolio</h1>
+      <p>Seven applied projects spanning exploratory analysis, predictive modeling, neural networks, generative AI, computer vision, and model deployment.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected projects</h2>
+      <p>Each project opens as a complete notebook export containing the problem framing, implementation, analysis, results, and recommendations.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <span class="number">Project 01 · Python Foundations</span>
+        <h3>FoodHub Data Analysis</h3>
+        <p>Analyzed restaurant-order data to understand demand, customer behavior, preparation and delivery performance, and opportunities to improve the ordering experience.</p>
+        <ul class="tags"><li>Python</li><li>Pandas</li><li>Exploratory analysis</li><li>Visualization</li></ul>
+        <div class="actions"><a class="button" href="foodhub-data-analysis.html">View project</a></div>
+      </article>
+
+      <article class="card">
+        <span class="number">Project 02 · Machine Learning</span>
+        <h3>Airbnb Price Prediction</h3>
+        <p>Explored rental-property features and built a linear-regression model to estimate listing prices and support pricing decisions for hosts and the platform.</p>
+        <ul class="tags"><li>Regression</li><li>Feature engineering</li><li>Model evaluation</li><li>Business insights</li></ul>
+        <div class="actions"><a class="button" href="airbnb-price-prediction.html">View project</a></div>
+      </article>
+
+      <article class="card">
+        <span class="number">Project 03 · Advanced Machine Learning</span>
+        <h3>EasyVisa Classification</h3>
+        <p>Developed and tuned classification models to identify profiles associated with visa certification outcomes and translate model drivers into actionable recommendations.</p>
+        <ul class="tags"><li>Classification</li><li>Ensemble models</li><li>Model tuning</li><li>Explainability</li></ul>
+        <div class="actions"><a class="button" href="easyvisa-classification.html">View project</a></div>
+      </article>
+
+      <article class="card">
+        <span class="number">Project 04 · Neural Networks</span>
+        <h3>ReneWind Predictive Maintenance</h3>
+        <p>Compared neural-network configurations for identifying wind-turbine generator failures, with evaluation choices informed by inspection, repair, and replacement costs.</p>
+        <ul class="tags"><li>Neural networks</li><li>Binary classification</li><li>TensorFlow/Keras</li><li>Cost-sensitive evaluation</li></ul>
+        <div class="actions"><a class="button" href="renewind-predictive-maintenance.html">View project</a></div>
+      </article>
+
+      <article class="card">
+        <span class="number">Project 05 · NLP with Generative AI</span>
+        <h3>Medical Assistant with RAG</h3>
+        <p>Built a retrieval-augmented generation prototype that combines document retrieval, prompt design, and answer evaluation to support access to medical reference information.</p>
+        <ul class="tags"><li>RAG</li><li>LLM prompting</li><li>Embeddings</li><li>Vector retrieval</li></ul>
+        <div class="actions"><a class="button" href="medical-assistant-rag.html">View project</a></div>
+      </article>
+
+      <article class="card">
+        <span class="number">Project 06 · Computer Vision</span>
+        <h3>HelmNet Helmet Detection</h3>
+        <p>Created an image-classification system for detecting safety-helmet use, addressing class imbalance and comparing convolutional neural-network approaches.</p>
+        <ul class="tags"><li>Computer vision</li><li>CNN</li><li>Image classification</li><li>Model evaluation</li></ul>
+        <div class="actions"><a class="button" href="helmnet-helmet-detection.html">View project</a></div>
+      </article>
+
+      <article class="card">
+        <span class="number">Project 07 · Model Deployment</span>
+        <h3>SuperKart Sales Forecasting &amp; Deployment</h3>
+        <p>Built, tuned, serialized, and deployed a sales-forecasting model with a Flask backend and a separate user-facing frontend.</p>
+        <ul class="tags"><li>Forecasting</li><li>Flask API</li><li>Streamlit</li><li>Model deployment</li></ul>
+        <div class="actions">
+          <a class="button" href="superkart-sales-deployment.html">View project</a>
+          <a class="button secondary" href="https://madsure-superkartsalesbackend.hf.space/" target="_blank" rel="noopener">Backend deployment</a>
+          <a class="button secondary" href="https://madsure-superkartsalesfrontend.hf.space/" target="_blank" rel="noopener">Frontend deployment</a>
+        </div>
+        <span class="status">Hosted on Hugging Face Spaces · currently paused</span>
+      </article>
+    </section>
+
+  </main>
+</body>
+</html>
